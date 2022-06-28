@@ -3,6 +3,16 @@ body {
     flex-direction: column;
     align-items: center;
     background-color: bisque;
+    background-image: url("./images/bullet-g58389ebae_1920.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Stick No Bills', sans-serif;
+}
+h1 {
+    margin-top: 80px;
+    color: rgb(110, 110, 237);
+    font-size: 4rem;
 }
 
 #board {
@@ -11,10 +21,11 @@ body {
     grid-template-rows: 100px 100px 100px;
     cursor: pointer;
     position: relative;
+    margin-top: 3rem;
 }
 
 .tile {
-    color: black;
+    color: rgb(47, 148, 195);
     font-size: 2em;
     display:flex;
     justify-content: center;
@@ -23,14 +34,14 @@ body {
 }
 
 .right-border {
-    border-right: 0.2em solid black;
+    border-right: 0.2em solid rgb(47, 148, 195);
 }
 .bottom-border {
-    border-bottom: 0.2em solid black;
+    border-bottom: 0.2em solid rgb(47, 148, 195);
 }
 .strike {
     position: absolute;
-    background-color: brown;
+    background-color: rgb(234, 115, 226);
 }
 
 .strike-row-1 {
@@ -77,27 +88,34 @@ body {
     left: 2%;
     transform: skewY(-45deg);
 }
-h1 {
-    color: black;
-}
+
+
 #gameOverArea {
     text-align: center;
-    border: black 8px solid;
+    border: rgb(110, 110, 237) 8px solid;
     padding: 50px;
     width: 50%;
     margin-top: 50px;
+    animation: blinker 2s linear infinite;
 }
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+
 h2 {
-    color: black;
+    color: rgb(110, 110, 237);
     font-size: 2em;
     margin-top: 0px;
 } 
 button {
     background-color: transparent;
-    color: black;
-    border: black 1px solid;
+    color: rgb(110, 110, 237);
+    border: rgb(110, 110, 237) 1px solid;
     padding: 10px;
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 .hidden {

@@ -91,8 +91,9 @@ function checkWinner() {
 }
 
 function gameOverScreen(winnerText) {
+    
     let text = 'Draw!' 
-    if(winnerText != null) {
+    if(winnerText != null) { 
         text = `Winner is ${winnerText}!`;
     }
     gameOverArea.className = 'visible';
